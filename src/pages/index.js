@@ -1,27 +1,54 @@
+import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
 import Menu from '../components/menu'
 import Navbar from '../components/navbar'
 import Term from '../components/term'
 // markup
 const IndexPage = () => {
-  const terms = [
-    {
-      'title':'Agile',
-      'description':'Agile is a software development methodology that focuses on communication and feedback throughout the development process. It also emphasizes working software over comprehensive documentation, and each iteration that a team makes to its product is seen as an opportunity to perfect it. Agile continues to grow in popularity, and its focus on communication with users directly benefits digital products.'
-    },
-    {
-      'title':'Agile',
-      'description':'Agile is a software development methodology that focuses on communication and feedback throughout the development process. It also emphasizes working software over comprehensive documentation, and each iteration that a team makes to its product is seen as an opportunity to perfect it. Agile continues to grow in popularity, and its focus on communication with users directly benefits digital products.'
-    },
-    {
-      'title':'Agile',
-      'description':'Agile is a software development methodology that focuses on communication and feedback throughout the development process. It also emphasizes working software over comprehensive documentation, and each iteration that a team makes to its product is seen as an opportunity to perfect it. Agile continues to grow in popularity, and its focus on communication with users directly benefits digital products.'
+  // const terms = [
+  //   {
+  //     'title':'Agile',
+  //     'description':'Agile is a software development methodology that focuses on communication and feedback throughout the development process. It also emphasizes working software over comprehensive documentation, and each iteration that a team makes to its product is seen as an opportunity to perfect it. Agile continues to grow in popularity, and its focus on communication with users directly benefits digital products.'
+  //   },
+  //   {
+  //     'title':'Agile',
+  //     'description':'Agile is a software development methodology that focuses on communication and feedback throughout the development process. It also emphasizes working software over comprehensive documentation, and each iteration that a team makes to its product is seen as an opportunity to perfect it. Agile continues to grow in popularity, and its focus on communication with users directly benefits digital products.'
+  //   },
+  //   {
+  //     'title':'Agile',
+  //     'description':'Agile is a software development methodology that focuses on communication and feedback throughout the development process. It also emphasizes working software over comprehensive documentation, and each iteration that a team makes to its product is seen as an opportunity to perfect it. Agile continues to grow in popularity, and its focus on communication with users directly benefits digital products.'
+  //   }
+  //   ]
+  const termsData = useStaticQuery(graphql`
+  {
+    allMarkdownRemark(sort: { fields: frontmatter___slug }) {
+      nodes {
+        frontmatter {
+          ID
+          createdAt
+          description
+          slug
+          tag
+          title
+        }
+      }
     }
-    ]
+  }
+
+  `)
+  // const terms = termsData.allMarkdownRemark.nodes
+  const query = window.location.search.split('tag=')[1]
+  const terms = termsData.allMarkdownRemark.nodes.filter((term) => {
+    if(query) {
+      return term.frontmatter.tag == query;
+    } else {
+      return term
+    }
+  })
   return (
     <main >
       <title>A to Z</title>
-      <div className="flex bg-light min-h-screen">
+      <div className="flex bg-light min-h-screen pb-10">
         <div className="fixed h-full">
           <Menu/>
         </div>
@@ -33,7 +60,7 @@ const IndexPage = () => {
         about digital products.</h1>
         <div className="">
         {terms.map((term, index) => ( 
-          <Term index={index} term={term} />
+          <Term index={index} term={term} key={index} />
           ))}
         </div>
         </div>

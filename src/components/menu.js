@@ -7,7 +7,7 @@ const Menu = () => {
     return (
         <div className='flex flex-col p-10 text-blue '>
             {alphabet.map((letter) => ( 
-                <Link to={letter}>{letter}</Link>
+                <Link key={letter} to={`?tag=${letter}`}>{letter}</Link>
             ))}
         </div>
     );
