@@ -1,6 +1,14 @@
 [
   {
-    "appHero": {},
+    "appHero": {
+      "ID": "5b0a79f0-af62-4a1f-97dc-703678c110d2",
+      "title": "sdff",
+      "subtitle": "fsdf",
+      "description": "fsdf",
+      "media": [],
+      "logo": [],
+      "createdAt": 1661605219571
+    },
     "details": {},
     "sections": [],
     "banner": {},
