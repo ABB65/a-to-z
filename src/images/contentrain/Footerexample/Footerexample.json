@@ -20,7 +20,12 @@
       ],
       "createdAt": 1670096305659
     },
-    "siteMap": {},
+    "siteMap": {
+      "ID": "2f3b0790-29a8-4c09-8580-a9494a0a42d8",
+      "title": "Exampla Sitemap",
+      "list": [],
+      "createdAt": 1670096342059
+    },
     "createdAt": 1670096249609,
     "ID": "d8ba805e-bc6f-44f7-98ad-697c86216bb8"
   }
