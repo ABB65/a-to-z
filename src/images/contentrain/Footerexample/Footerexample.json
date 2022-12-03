@@ -23,7 +23,14 @@
     "siteMap": {
       "ID": "2f3b0790-29a8-4c09-8580-a9494a0a42d8",
       "title": "Exampla Sitemap",
-      "list": [],
+      "list": [
+        {
+          "ID": "91cab831-15c8-47e4-86f2-e8c0f1810296",
+          "title": "Exampla Sitemap",
+          "link": "https://contentrain.io/docs",
+          "createdAt": 1670096370877
+        }
+      ],
       "createdAt": 1670096342059
     },
     "createdAt": 1670096249609,
