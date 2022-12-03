@@ -3,8 +3,9 @@
     "summary": {
       "ID": "343cddbf-78ea-481a-b03c-1eee96024d88",
       "title": "Test Footer Title",
-      "description": "",
-      "createdAt": 1670096269828
+      "description": "<p>This is test footer title</p>",
+      "createdAt": 1670096269828,
+      "updatedAt": 1670096284810
     },
     "socialLinks": {},
     "siteMap": {},
