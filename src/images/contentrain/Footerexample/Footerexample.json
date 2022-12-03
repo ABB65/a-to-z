@@ -22,7 +22,7 @@
     },
     "siteMap": {
       "ID": "2f3b0790-29a8-4c09-8580-a9494a0a42d8",
-      "title": "Exampla Sitemap",
+      "title": "Example Sitemap",
       "list": [
         {
           "ID": "91cab831-15c8-47e4-86f2-e8c0f1810296",
@@ -31,7 +31,8 @@
           "createdAt": 1670096370877
         }
       ],
-      "createdAt": 1670096342059
+      "createdAt": 1670096342059,
+      "updatedAt": 1670096384477
     },
     "createdAt": 1670096249609,
     "ID": "d8ba805e-bc6f-44f7-98ad-697c86216bb8"
