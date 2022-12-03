@@ -1,6 +1,11 @@
 [
   {
-    "summary": {},
+    "summary": {
+      "ID": "343cddbf-78ea-481a-b03c-1eee96024d88",
+      "title": "Test Footer Title",
+      "description": "",
+      "createdAt": 1670096269828
+    },
     "socialLinks": {},
     "siteMap": {},
     "createdAt": 1670096249609,
