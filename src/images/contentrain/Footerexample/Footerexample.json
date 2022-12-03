@@ -7,7 +7,12 @@
       "createdAt": 1670096269828,
       "updatedAt": 1670096284810
     },
-    "socialLinks": {},
+    "socialLinks": {
+      "ID": "e5e3bb7a-818a-4e01-a1fb-571b36af936d",
+      "title": "Example Link",
+      "list": [],
+      "createdAt": 1670096305659
+    },
     "siteMap": {},
     "createdAt": 1670096249609,
     "ID": "d8ba805e-bc6f-44f7-98ad-697c86216bb8"
