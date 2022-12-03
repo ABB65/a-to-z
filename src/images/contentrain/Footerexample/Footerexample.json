@@ -10,7 +10,14 @@
     "socialLinks": {
       "ID": "e5e3bb7a-818a-4e01-a1fb-571b36af936d",
       "title": "Example Link",
-      "list": [],
+      "list": [
+        {
+          "ID": "05658a12-77ce-4283-bfd3-09bd5c5ce3d1",
+          "icon": "homeIcon",
+          "URL": "https://contentrain.io",
+          "createdAt": 1670096324776
+        }
+      ],
       "createdAt": 1670096305659
     },
     "siteMap": {},
